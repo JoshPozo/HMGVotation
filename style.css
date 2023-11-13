@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  background-image: url("/Img/17545.jpg");
+  background-image: url("/Img/bg1.jpg");
   background-size: cover;
 }
 
@@ -44,22 +44,22 @@ header {
 }
 
 .Class_Btn {
+  margin: 50px;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
-
+  justify-content: center;
 }
 
 .contbtn1 {
   width: 100%;
   margin: 20px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .button {
-  margin: 10px 50px;
+  margin: 5px 40px;
   /* apegar o separar botones */
   border: none;
   border-radius: 15%;
@@ -70,8 +70,6 @@ header {
   cursor: pointer;
   width: 175px;
   height: 200px;
-  display: flex;
-
 }
 
 h2 {
@@ -86,4 +84,39 @@ h2 {
   cursor: pointer;
   width: 175px;
   height: 200px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .contbtn1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    position: auto;
+  }
+ 
+  .cont_img{
+    position: auto;
+  }
+
+  .tit {
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 75px;
+  }
+
+  .titImg {
+    margin: 20px;
+  }
+  
+  .imagen {
+    width: 90px;
+    height: 90px;
+  }
 }
